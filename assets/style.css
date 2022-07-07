@@ -1,5 +1,16 @@
-.top {
-    align-items: center;
-    margin: 20px;
-    background-color: rgb(26, 56, 100);
-}
+body {
+    color: rgb(7, 1, 1);
+    background: rgb(83, 140, 153);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    #weathercontainer {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+        width: 1300px;
+        border: 5px solid rgba(97, 95, 95, 0.829);    
+        border-radius: 10px;
+    }
