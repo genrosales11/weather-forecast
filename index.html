@@ -7,11 +7,12 @@
     <title>weahter forecast</title>
     <link rel="style.css" href="/assets/style.css">
 </head>
-<body>
+<body onload="DefaultScreen()"></body>
     <center>
    
-        <h1 id="first">Weather Forecast</h1>
-  <p id="inputcontainer">City: <input type="text" id="cityInput"></p>
+        <h1 id="Para1">5 Days Weather Forecast</h1>
+        <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+        <button type="button" onclick="GetInfo()">Click Me</button> 
     <button>Click Me</button>
     <h2 id="cityName">--London--</h2>
 
@@ -20,9 +21,9 @@
     <div id="iconscontainer">
         <div class="icons">
             <p class="weather" id="day1"></p>
-            <div class="image"><img src="img.here" class= "imgclass" id="img1" atl""></div>
-            <p class="minValue" id="day1Min"><Loading></Loading></p>
-            <p class="maxValue" id="day1Max"><Loading></Loading></p>
+            <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+            <p class="minValues" id="day1Min">Loading...</p>
+            <p class="maxValues" id="day1Max">Loading...</p>
  </div>
  <div class="icons">
     <p class="weather" id="day1"></p>
@@ -50,5 +51,6 @@
 </div>
     </div>
 </div>
+<script src="/assets/script.js"></script>
 </body>
 </html>
